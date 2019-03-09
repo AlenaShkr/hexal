@@ -1,9 +1,22 @@
 * {
 box-sizing: border-box;
 }
+
 @font-face {
     font-family: Lato-Bold;
     src:url('./assets/fonts/lato/Lato-Bold.ttf')
+}
+@font-face {
+    font-family: Lato-Regular;
+    src:url('./assets/fonts/lato/Lato-Regular.ttf')
+}
+@font-face {
+    font-family: Lato-Black;
+    src:url('./assets/fonts/lato/Lato-Black.ttf')
+}
+@font-face {
+    font-family: MavenProRegular;
+    src: url('./assets/fonts/maven-pro/MavenPro-Regular.ttf')
 }
 
 .wrapper {
@@ -19,10 +32,12 @@ margin:  0 auto;
 
     color: rgba(255, 255, 255, 255);
 }
+
 .nav {
     width: 398px;
     margin:  0 auto;
     padding-top: 6px;
+
 }
 .nav ul {
     display: flex;
@@ -43,20 +58,24 @@ margin:  0 auto;
     text-decoration-line: none;
     text-decoration: none;
 }
-li a:hover{
+.nav ul li a:hover{
     color: #2f9882;
 }
- 
+
 .nav__logo {
     width: 61px;
     height: 55px;
     padding-top: 3px;
+    margin-left: 2px;
+    margin-right: 25px;
+    padding-right: 2px;
+    padding-left: 12px;
 }
 .nav__logo h1 {
     margin: 0px;
 }
 .nav__logo h1 img {
-    background: #323;
+    background: #323232;
 }
 .header__triangle {
     width: 0;
@@ -66,8 +85,43 @@ li a:hover{
     border-color:#323232 transparent transparent transparent;
     margin: 0 auto;
 
+
+}
+.header__line_left {
+    display: inline-block;
+    width: 410px;
+    height: 1px;
+    background: #e4e9eb;
+    position: relative;
+    left: -478px;
+    top: -30px;
+}
+.header__line_right {
+  display: inline-block;
+  width: 410px;
+  height: 1px;
+  background: #e4e9eb;
+  position: relative;
+  left: 71px;
+  top: -47px;
 }
 
+.hexagon__line_left {
+  width: 1px;
+  height: 104px;
+  background: #e4e9eb;
+  margin: auto 0;
+  position: relative;
+  left: 30px;
+}
+.hexagon__line_right {
+  width: 1px;
+  height: 104px;
+  background: #e4e9eb;
+  margin: auto 0;
+  position: relative;
+  left: 43px;
+}
 .hexagon__layer1 {
     width: 182px;
     height: 209px;
@@ -96,85 +150,357 @@ li a:hover{
     visibility: visible;
     background-repeat: no-repeat;
     background-position: 50%;
-   
+
+    border-left: 1px solid #e4e9eb;
+    border-right: 1px solid #e4e9eb;
+
 }
 .hexagon1 .hexagon__image {
-    background-image: url('./assets/Slider/Layer\ 33@1X.jpeg');  
+    background-image: url('./assets/Slider/Layer\ 33@1X.jpeg');
 }
 
 .hexagon2 .hexagon__image {
-    background-image: url('./assets/Slider/Layer\ 31@1X.jpeg');  
+    background-image: url('./assets/Slider/Layer\ 31@1X.jpeg');
 }
 
 .hexagon3 .hexagon__image {
-    background-image: url('./assets/Slider/Layer\ 34@1X.jpeg');  
+    background-image: url('./assets/Slider/Layer\ 34@1X.jpeg');
 }
 
 .hexagon4 .hexagon__image {
-    background-image: url('./assets/Slider/Layer\ 35@1X.jpeg');  
+    background-image: url('./assets/Slider/Layer\ 35@1X.jpeg');
+    background-position: 53% 110%;
 }
 
 .hexagon5 .hexagon__image {
-    background-image: url('./assets/Slider/Layer\ 36@1X.jpeg');  
+    background-image: url('./assets/Slider/Layer\ 36@1X.jpeg');
 }
 
 .hexagon6 .hexagon__image {
-    background-image: url('./assets/Slider/Layer\ 44@1X.jpeg');  
+    background-image: url('./assets/Slider/Layer\ 44@1X.jpeg');
 }
 
 .hexagon7 .hexagon__image {
-    background-image: url('./assets/Slider/Layer\ 37@1X.jpeg');  
+    background-image: url('./assets/Slider/Layer\ 37@1X.jpeg');
 }
 
 .hexagon8 .hexagon__image {
-    background-image: url('./assets/Slider/Layer\ 38@1X.jpeg');  
+    background-image: url('./assets/Slider/Layer\ 38@1X.jpeg');
 }
 
 .hexagon9 .hexagon__image {
-    background-image: url('./assets/Slider/Layer\ 39@1X.jpeg');  
+    background-image: url('./assets/Slider/Layer\ 39@1X.jpeg');
 }
 
 .hexagon10 .hexagon__image {
-    background-image: url('./assets/Slider/Layer\ 40@1X.jpeg');  
+    background-image: url('./assets/Slider/Layer\ 40@1X.jpeg');
 }
 
 .hexagon11 .hexagon__image {
-    background-image: url('./assets/Slider/Layer\ 41@1X.jpeg');  
+    background-image: url('./assets/Slider/Layer\ 41@1X.jpeg');
 }
 
 .hexagon12 .hexagon__image {
-    background-image: url('./assets/Slider/Layer\ 43@1X.jpeg');  
+    background-image: url('./assets/Slider/Layer\ 43@1X.jpeg');
 }
 
 .hexagon13 .hexagon__image {
-    background-image: url('./assets/Slider/Layer\ 42@1X.jpeg');  
+    background-image: url('./assets/Slider/Layer\ 42@1X.jpeg');
 }
 
 .slider__hexagon_fourimages {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 900px;
-    margin: -60px auto;
-   
-
+    width: 850px;
+    margin: -63px auto;
 }
+
 .slider__hexagon_fiveimages {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-direction: row;
-    
-
 }
+
 .slider {
     margin-top: 130px;
-    margin-right: 3px;
+    margin-right: -3px;
     margin-left: -75px;
-    height: 491px;
+    height: 592px;
     background: #ffffff;
     padding-top: 10px;
+}
+
+.slider__indication {
+
+  display: inline-block;
+  margin: 53px 0 0 99px;
+  font-size: 60px;
+  color: #ddd2c5;
+  letter-spacing: -6px;
+
+}
+
+.slider__line_bottom {
+  width: 960px;
+  height: 1px;
+  background: #e4e9eb;
+  margin: 0 auto;
+}
+
+.about {
+    background: #2eb398;
+    height: 341px;
+    padding-top: 12px;
+}
+
+.about__description {
+    width: 826px;
+    height: 317px;
+    margin: 0 auto;
+    padding-top: 46px;
+    border-left: 1px solid #219d84;
+    border-right: 1px solid #219d84;
+}
+
+.about__hexagon .hexagon__image {
+    background-image: url('./assets/about/Image@1X.jpeg ');
+}
+
+.about__portrait {
+    position: relative;
+    left: -25px;
+    padding-right: 16px;
+    display: inline-block;
+}
+.about_descriptiontext {
+    display: inline-block;
+    width: 581px;
+
+    color:white;
+    position: relative;
+    bottom: 70px;
+
+}
+.about_descriptiontext h2 {
+    margin-bottom: 0px;
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 30px;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+}
+.about_descriptiontext span {
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 18px;
+    color: rgba(32, 129, 109, 255);
+    text-align: justify;
+}
+
+.about_descriptiontext p {
+
+    font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(215, 252, 245, 255);
+    text-align: justify;
+    line-height: 25px;
+}
+.about__socialnetwork a {
+    width: 25px;
+    height: 24px;
+    background-image: url(./assets/about/crop@1X.jpeg);
+    background-repeat: no-repeat;
+    display: inline-block;
+
+}
+.about__socialnetwork a:hover {
+    border: #ece9e9 2px solid;
+}
+.about__socialnetwork_twitter {
+    background-position-x: -25px;
+}
+
+.about__socialnetwork_google {
+    background-position-x: -50px;
+}
+.about__socialnetwork_pinterest {
+    background-position-x: -75px;
+}
+.about__socialnetwork_linkedin {
+    background-position-x: -100px;
+}
+.about__socialnetwork_dribbble {
+    background-position-x: -125px;
+
+}
+
+.about__socialnetwork {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 56px;
+    right: 20px;
+
+}
+.getintouch {
+    width: 100%;
+    height: 564px;
+    background: #323232;
+    margin: 0 auto;
+    border-bottom: none;
+
+}
+.getintouch__line_top {
+  width: 960px;
+  height: 15px;
+  border-bottom: #2b2b2b 1px solid;
+  margin: 0 auto;
+}
+.getintouch__line_bottom {
+  width: 960px;
+
+  border-top: #2b2b2b 1px solid;
+  margin: 0 auto;
+}
+.getintouch__container {
+    width: 820px;
+    height: 535px;
+    margin: 0 auto;
+    padding-top: 44px;
+    padding-left: 20px;
+}
+
+.getintouch__container h3 {
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 30px;
+    color: rgba(224, 224, 224, 255);
+    text-align: justify;
+
+    margin: 0;
+
+}
+.form__label {
+    color: white;
+    word-spacing: 4px;
+    font-family: MavenProRegular;
+}
+
+
+form {
+    width: 580px;
+    margin-top: 20px;
+    display: inline-block;
+
+}
+form input:not(:last-child){
+ width: 100%;
+ background: #454545;
+ height: 38px;
+ margin-bottom: 16px;
+ border: none;
+ font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+ font-size: 12px;
+ color: rgba(190, 190, 190, 255);
+ text-align: start;
+}
+
+input:not(:last-child) {
+    text-indent: 13px;
+}
+form :last-child {
+    width: 90px;
+    height: 37px;
+    background: #2eb398;
+    font-family: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(215, 252, 245, 255);
+    text-align: center;
+
+    border: none;
+
+    position: relative;
+    left: 490px;
+
+}
+form textarea {
+    width: 100%;
+    resize: none;
+    background: #454545;
+    height: 150px;
+    margin-bottom: 16px;
+    border: none;
+    font-family: Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(190, 190, 190, 255);
+    text-indent: 13px;
+    padding-top: 14px;
+    word-spacing: 0px;
+
+}
+.getintouch__description, .getintouch__contact {
+    width: 180px;
+    height: 117px;
+    display: inline-block;
+    position: relative;
+    bottom: 238px;
+    margin-left: 17px;
+    line-height: 1.75;
+    font-family:  Lato-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12px;
+    color: rgba(224, 224, 224, 255);
+    text-align: justify;
+}
+.getintouch__contact {
+    position: relative;
+    left: 585px;
+
+    bottom: 211px;
+    word-spacing: -1px;
+
+}
+.getintouch__contact a {
+    color: rgba(224, 224, 224, 255);
+    text-decoration-line: none;
+    text-decoration: none;
+    -moz-text-decoration-line: none;
+}
+.getintouch__contact_address i {
+
+    color: #2eb398;
+    margin-right: 14px;
+}
+.getintouch__contact_phone i {
+
+    color: #2eb398;
+    margin-right: 9px;
+
+}
+
+.getintouch__contact_email i {
+
+    color: #2eb398;
+    margin-right: 9px;
+
+}
+.getintouch__description p span {
+    font-family: Lato-Black;
+}
+
+
+.footer__copyright {
+    width: 100%;
+    height: 43px;
+    background: #222222;
+    font-family: MavenProRegular, AdobeInvisFont, MyriadPro-Regular;
+
+    color: rgba(69, 69, 69, 255);
+    padding-left: 37px;
+    padding-top: 16px;
+    font-size: 11px;
+    word-spacing: 2px;
+
 }
 
 
