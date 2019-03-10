@@ -4,19 +4,19 @@ box-sizing: border-box;
 
 @font-face {
     font-family: Lato-Bold;
-    src:url('./assets/fonts/lato/Lato-Bold.ttf')
+    src:url('./assets/fonts/lato/Lato-Bold.woff2')
 }
 @font-face {
     font-family: Lato-Regular;
-    src:url('./assets/fonts/lato/Lato-Regular.ttf')
+    src:url('./assets/fonts/lato/Lato-Regular.woff2')
 }
 @font-face {
     font-family: Lato-Black;
-    src:url('./assets/fonts/lato/Lato-Black.ttf')
+    src:url('./assets/fonts/lato/Lato-Black.woff2')
 }
 @font-face {
     font-family: MavenProRegular;
-    src: url('./assets/fonts/maven-pro/MavenPro-Regular.ttf')
+    src: url('./assets/fonts/maven-pro/MavenPro-Regular.woff2')
 }
 
 .wrapper {
